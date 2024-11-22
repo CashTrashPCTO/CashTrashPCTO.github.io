@@ -157,7 +157,7 @@ input{
     outline: none;
     margin-bottom: 15px;
     font-stretch: 16px;
-    color: #646464;
+    color: #676767;
     text-align: left;
     padding: 14px 20px;
     width: 100%;
@@ -170,6 +170,26 @@ input{
 .login-form input:focus{
     background: transparent;
     border: 1px solid #0C7F59;
+}
+
+.login-form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background: #f7fafc;
+    font-stretch: 16px;
+    resize: none;
+    color: #676767;
+}
+
+.login-form textarea:focus{
+    background: transparent;
+    border: none;
+    border: 1px solid #0C7F59;
+    outline: none;
 }
 
 a{
