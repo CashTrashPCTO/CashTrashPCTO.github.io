@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/Logo TrashCash no scritta.png" type="image/x-icon">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="chisiamo.css">
 </head>
 
 <body>
-    <section class="main page">
+    <header id="navbar">
+        <div class="Logo">
+            <img src="images/Logo TrashCash.png" class="logo">
+            <img src="images/Logo TrashCash no scritta.png" class="logonoscritta">
+        </div>
+        <div class="menu" id="menu">
+            <ul class="sidebar">
+                <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#" onclick="infoscroll()" id="informazioni">Informazioni</a></li>
+                <li><a href="index.html">Home Page</a></li>
+            </ul>
+            <ul class="flexbar">
+                <li class="hideonmobile"><a href="#" onclick="infoscroll()" id="informazioni">Informazioni</a></li>
+                <li class="hideonmobile"><a href="index.html">Home Page</a></li>
+                <li class="menuicon"><a href="#" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="mainpage">
         <div class="hero">
-            <header id="navbar">
-                <img src="images/Logo TrashCash.png" class="logo">
-                <ul>
-                    <li><a href="#" onclick="infoscroll()" id="informazioni">Informazioni</a></li>
-                    <li><a href="index.html" onclick="verificalogin()">Home Page</a></li>
-                </ul>
-            </header>
+        
             <div class="titlebox">
                 <h1 class="title">Chi siamo</h1>
                 <h2 class="subtitle">Una piccola pagina per presentarci</h2>
@@ -30,53 +43,48 @@
             <img src="images/gruppo no sfondo.png" class="teamphoto">
         </div>
     </section>
-    <section class="information">
-        <div class="hero2">
-            <p class="infobar">
-                <div class="web">
-                    <a class="infoTitle">Web Developer</a>
-                    <a>
-                    <br>Alberto D'addetta
-                    <br>Marwan Belli
-                    </a>
+    
+    <section class="infobar">
+        <div class="info-container">
+            <div class="info-text-container">
+                <div class="ruoli">
+                    <h4>Sviluppatore Web</h5>
+                    <p>Alberto D'Addetta</p>
                 </div>
-                <div class="graphic">
-                    <a class="infoTitle">Graphic Designer</a>
-                    <a>
-                    <br>Daniele Vinelli
-                    <br>Alberto D'addetta
-                    </a>
+                <div class="ruoli">
+                    <h4>Sviluppatore Hardware</h5>
+                    <p>Francesco Antonio Mangiacotti</p>
                 </div>
-                <div class="photographer">
-                    <a class="infoTitle">Video Maker</a>
-                    <a>
-                    <br>Francesco Longo
-                    <br>Emanuele Steduto
-                    <br>Francesco Ippolito
-                    <br>Beatrice Patrone<br>
-                    </a>
+                <div class="ruoli">
+                    <h4>Facilitatore</h5>
+                    <p>Nicola Savino</p>
                 </div>
-                <div class="highrank">
-                    <a class="infoTitle">Project Manager<br></a>
-                        <a>Giuseppe Ziccardi</a>
-                    <br>
-                    <a class="infoTitle">Facilitator<br></a>
-                        <a>Nicola Savino</a>
-                </div>
-                <div class="tech">
-                    <a class="infoTitle">Technical Developer<br></a>
-                        <a>Francesco Mangiacotti
-                        <br>Giovanni Luca Ciavarella
-                        </a>
-                </div>
-                <form class="infosoc" onsubmit="return verificalogin()">
-                    <p class="email">cashtrash.pcto@gmail.com</p>
-                    <input type="text" placeholder="Mandaci una mail">
-                    <button class="emailbtn">Invia</button>
-                    <p class="rights">CashTrash® All rights reserved</p>
-                </form>
-            </p>
+            </div>
+            <div class="info-others">
+                <h4>Collaboratori</h4>
+                <ul>
+                    <li>Emanuele Steduto</li>
+                    <li>Giuseppe Ziccardi</li>
+                    <li>Beatrice Patrone</li>
+                    <li>Francesco Longo</li>
+                    <li>Daniele Vinelli</li>
+                    <li>Marwan Belli</li>
+                    <li>Giovanni Luca Ciavarella</li>
+                </ul>
+            </div>
+            <div class="info-actions">
+                <h4>Azioni</h4>
+                <ul>
+                    <li><a href="codescan.html">Scansiona Codice</a></li>
+                    <li><a href="chisiamo.html">Chi Siamo</a></li>
+                    <li><a href="https://www.youtube.com/@CashTrashbuisness">Canale YT</a></li>
+                    <li><a href="contactus.html">Contattaci</a></li>
+                    <li><a href="login/signup.html">Registrati</a></li>
+                    <li><a href="login/login.html">Accedi</a></li>
+                </ul>
+            </div>
         </div>
-      </section>
+    </section>
+
     <script src="script.js"></script>
 </body>

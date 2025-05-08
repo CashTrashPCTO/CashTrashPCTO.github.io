@@ -14,6 +14,22 @@ function changeNavBarBg(){
 }
 window.addEventListener('scroll', changeNavBarBg);
 
+const scrollContainer = document.querySelector('.scroll-container');
+
+    function scrollLeft() {
+        scrollContainer.scrollBy({
+            left: -window.innerWidth,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        scrollContainer.scrollBy({
+            left: window.innerWidth,
+            behavior: 'smooth'
+        });
+    }
+
 const urlParams = new URLSearchParams(window.location.search);
 const hideButton = urlParams.get('hideButton');
 
@@ -46,33 +62,6 @@ function infoscroll(){
     });
 }
 
-function vanish(){
-    window.close("loginpage.html");
-    window.open("index.html?hideButton=true");
-}
-
-function verificalogin(){
-    if(hideButton == 'true'){
-        window.close("index.html");
-        window.open("index.html?hideButton=true");
-    }
-    else{
-        window.close("index.html");
-        window.open("index.html");
-    }
-}
-
-function verificaChisiamo(){
-    if(hideButton == 'true'){
-        window.close("index.html");
-        window.open("chisiamo.html?hideButton=true");
-    }
-    else{
-        window.close("index.html");
-        window.open("chisiamo.html");
-    }
-}
-
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'flex';
@@ -82,3 +71,4 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none'
 }
+
